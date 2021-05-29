@@ -1,32 +1,39 @@
 package Assignment1;
 import java.util.*;
-
-public class stack{
-	LinkedList <Integer> s=new LinkedList <Integer>();
-	
-	 boolean checkEmpty() {
-		if(s.size()==0)
+class node{
+	int value;
+	node next;
+}
+class stack{
+	node head;
+	int elements=0;
+	stack(){
+		head=null;
+	}
+	boolean checkEmpty() {
+		if(head==null)
 			return true;
 		else
 			return false;
 	}
-	
-	 void push(int ele) {
-		this.s.add(0,ele);
-		System.out.println(ele+" pushed to the stack successfully\n");
+	void push(int ele) {
+		node newNode=new node();
+		newNode.value=ele;
+		newNode.next=this.head;
+		this.head=newNode;
+		System.out.println(newNode.value+" pushed successfully\n");
+		elements++;
 	}
-	
-	 void pop() {
-		if(this.checkEmpty()) {
-			System.out.println("The stack is already empty\n");
+	void pop() {
+		if(this.stackSize()==0) {
+			System.out.println("Empty stack");
+			return;
 		}
-		else {
-			System.out.println(this.s.get(0)+" popped from the stack successfully\n");
-			this.s.remove(0);
-		}
+		System.out.println(this.head.value+" popped\n");
+		this.head=this.head.next;
+		elements--;
 	}
-	
-	 int stackSize() {
-		return this.s.size();
+	int stackSize() {
+		return elements;
 	}
 }
