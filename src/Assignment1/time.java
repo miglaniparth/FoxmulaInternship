@@ -5,12 +5,12 @@ public class time{
 	time(){
 		
 	}
-	public time(int hour,int min,int sec){
+	 time(int hour,int min,int sec){
 		this.hour=hour;
 		this.min=min;
 		this.sec=sec;
 	}
-	public time add(time obj) {
+	 time add(time obj) {
 		time t=new time();
 		t.sec=this.sec+obj.sec;
 		if(t.sec>59) {

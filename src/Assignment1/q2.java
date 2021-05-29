@@ -12,7 +12,7 @@ public class q2 {
 			int stackChoice=obj.nextInt();
 			switch(stackChoice) {
 			case 1:
-				System.out.println("Select the stack operation :\n 1. Push\n 2. Pop 3. Check Empty\n");
+				System.out.println("Select the stack operation :\n 1. Push\n 2. Pop\n 3. Check Empty\n");
 				int operationChoice=obj.nextInt();
 				switch(operationChoice) {
 				case 1:
@@ -32,7 +32,7 @@ public class q2 {
 				}
 				break;
 			case 2:
-				System.out.println("Select the stack operation :\n 1. Push\n 2. Pop 3. Check Empty\n");
+				System.out.println("Select the stack operation :\n 1. Push\n 2. Pop\n 3. Check Empty\n");
 				int operationChoice2=obj.nextInt();
 				switch(operationChoice2) {
 				case 1:
@@ -56,7 +56,7 @@ public class q2 {
 			}
 			
 			if(s1.stackSize()==s2.stackSize())
-				System.out.println("Both the stacks are of same size : "+s1.stackSize());
+				System.out.println("\nBoth the stacks are of same size : "+s1.stackSize());
 		}
 
 	}

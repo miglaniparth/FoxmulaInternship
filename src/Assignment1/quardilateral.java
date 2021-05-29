@@ -1,6 +1,6 @@
 package Assignment1;
 
-public abstract class quardilateral {
+ abstract class quardilateral {
 	protected int x[]=new int [4];
 	protected int y[]=new int [4];
 	
