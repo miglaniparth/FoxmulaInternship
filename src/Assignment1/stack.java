@@ -2,7 +2,7 @@ package Assignment1;
 import java.util.*;
 
 public class stack{
-	ArrayList <Integer> s=new ArrayList <Integer>();
+	LinkedList <Integer> s=new LinkedList <Integer>();
 	
 	 boolean checkEmpty() {
 		if(s.size()==0)
