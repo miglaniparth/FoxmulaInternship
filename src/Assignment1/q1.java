@@ -1,5 +1,5 @@
-package Assign_1;
-import Assignment1.time;
+package Assignment1;
+
 public class q1 {
 
 	public static void main(String[] args) {

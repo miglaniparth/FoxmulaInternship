@@ -1,5 +1,4 @@
-package Assign_1;
-import Assignment1.stack;
+package Assignment1;
 import java.util.*;
 public class q2 {
 

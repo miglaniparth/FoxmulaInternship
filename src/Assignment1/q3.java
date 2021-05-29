@@ -1,6 +1,5 @@
-package Assign_1;
+package Assignment1;
 import java.util.*;
-import Assignment1.*;
 public class q3 {
 
 	public static void main(String[] args) {
