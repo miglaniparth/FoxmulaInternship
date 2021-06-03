@@ -9,10 +9,10 @@ class node implements Comparable<node>{
 		return this.frequency;
 	}
 	
-    public int compareTo(node comparestu) {
-        int compareage=((node)comparestu).getFrequency();
+   public int compareTo(node obj2) {
+        int freq2=obj2.getFrequency();
         
-        return this.frequency-compareage;
+        return this.frequency-freq2;
     }
 
 }
