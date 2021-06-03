@@ -4,9 +4,22 @@ import java.util.*;
 
 class node implements Comparable<node>{
 	
-	int element,frequency;
+	private int element,frequency;
+	
 	int getFrequency() {
 		return this.frequency;
+	}
+	
+	int getElement() {
+		return this.element;
+	}
+	
+	void setFrequency(int freq) {
+		this.frequency=freq;
+	}
+	
+	void setElement(int ele) {
+		this.element=ele;
 	}
 	
    public int compareTo(node obj2) {
@@ -61,11 +74,11 @@ class frequency{
 //		System.out.print(hash);
 		for(int i:hash) {
 			node obj = new node();
-			obj.element=i;
-			obj.frequency=0;
+			obj.setElement(i);
+			obj.setFrequency(0);
 			for(int j: arr) {
 				if(i==j)
-					obj.frequency++;
+					obj.setFrequency(obj.getFrequency()+1);
 			}
 			distinct.add(obj);
 		}
@@ -76,6 +89,6 @@ class frequency{
 	void objSort() {
 		Collections.sort(distinct);
 		for(node item: distinct)
-		System.out.println("Element : "+item.element+"  Frequency : "+item.frequency+"\n");
+		System.out.println("Element : "+item.getElement()+"  Frequency : "+item.getFrequency()+"\n");
 		}
 	}
